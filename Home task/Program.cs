@@ -35,6 +35,44 @@
             #endregion
 
 
+            #region task 2
+            int[] numbers = { 3, 5, 7, 9, 24, 24 };
+            int[] numbers2 = { 3, 5, 7, 9, 24, 24 };
+            int i = 0;
+            int i2= 0;
+            bool copy=true;
+
+            if(numbers.Length > numbers2.Length)
+            {
+                copy = false;
+            }
+            else
+            {
+                for(i=0; i<numbers.Length; i++)
+                {
+                    bool found=false;
+                    for (i2 = 0; i2 < numbers2.Length; i2++)
+                    {
+                        if (numbers2[i2] == numbers[i])
+                        {
+                            found=true;
+                            break;  
+                        }
+
+                    }
+
+                    if (found)
+                    {
+                        copy = false;
+                        break;
+                    }
+                }
+            }
+            #endregion
+
+
+
+
 
 
 
